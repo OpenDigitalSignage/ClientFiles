@@ -6,7 +6,7 @@ for displaying digital signage data.
 
 All we need is the Chrome Browser... ;-)
 
-And additionally some tweks for security...
+And additionally some tweaks for security...
 
 
 /TR 2017-01-06
