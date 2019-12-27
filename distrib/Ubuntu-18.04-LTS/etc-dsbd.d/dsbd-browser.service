@@ -1,0 +1,17 @@
+[Unit]
+Description=Digital Signage Background Daemon (dsbd-sample)
+Documentation=https://github.com/OpenDigitalSignage
+
+[Service]
+Environment=DSB_NAME="%N"
+Environment=DSB_USER="dsbd"
+Environment=DSB_RUNDIR="%t/dsbd"
+User=dsbd
+Restart=always
+RestartSec=10
+PermissionsStartOnly=true
+ExecStartPre=/usr/sbin/dsbd
+ExecStart=/usr/sbin/dsbd
+
+[Install]
+WantedBy=multi-user.target
